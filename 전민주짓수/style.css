@@ -1,0 +1,423 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  transition: 0.5s;
+}
+.header {
+  min-height: 65vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 10, 20, 0.8), rgba(4, 10, 20, 0.8)),
+    url(images/header_image4.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav .fas {
+  display: none;
+}
+
+.nav img {
+  width: 150px;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+}
+
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.nav-links ul li:hover {
+  transition: 700ms;
+  background-color: #f44336;
+  border-radius: 4px;
+}
+
+.text-box {
+  position: absolute;
+  width: 90%;
+  color: #fff;
+  top: 35%;
+  left: 5%;
+  text-align: center;
+}
+
+.text-box span {
+  /* display: inline-block; 이어야 animation 실행! */
+  font-size: 66px;
+  display: inline-block;
+  animation: waviy 2s infinite;
+  animation-delay: calc(0.1s * var(--i));
+  font-family: 'Alfa Slab One', cursive;
+}
+@keyframes waviy {
+  0%,
+  40%,
+  100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-20px);
+  }
+}
+
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 18px;
+}
+
+.hero-btn {
+  margin-top: 3%;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 12px 34px;
+  font-size: 22px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.hero-btn:hover {
+  border: 1px solid #f44336;
+  background: #f44336;
+  transition: 1s;
+}
+
+.row {
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.swiper {
+  width: 70%;
+  height: 500px;
+  border-radius: 5px;
+  margin-top: 2%;
+}
+
+.swiper-slide img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* 갤러리 */
+.gallery {
+  padding: 2%;
+  width: 80%;
+  margin: 100px auto;
+  text-align: center;
+  background: rgba(232, 232, 232, 0.5);
+}
+
+.gallery h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.gallery p {
+  color: #777;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.gallery-col {
+  position: relative;
+  overflow: hidden;
+  flex-basis: 24%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+}
+
+.gallery-col img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.layer {
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: transparent;
+}
+
+.layer:hover {
+  background: rgba(232, 232, 232, 0.8);
+}
+
+.layer h3 {
+  position: absolute;
+  color: rgba(46, 49, 49, 1);
+  font-size: 20px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.3s;
+  opacity: 0;
+}
+.layer:hover h3 {
+  bottom: 45%;
+  opacity: 1;
+}
+/* 시설 사진 */
+.facilities {
+  width: 80%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.facilities h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.facilities p {
+  color: #777;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  padding: 10px;
+}
+
+/* 시간표 */
+.programs {
+  padding: 2%;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  background: rgba(232, 232, 232, 0.5);
+  overflow-x: auto;
+}
+
+.programs h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.programs p {
+  color: #777;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.programs-data {
+  margin: auto;
+  box-shadow: 0 3px 7px grey;
+  background-color: white;
+}
+
+.programs-data:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+tr {
+  border: 1px solid #444444;
+}
+
+tr:nth-child(even) {
+  background-color: #eaeaeb;
+}
+
+thead {
+  box-shadow: 0 1px 5px grey;
+}
+
+th {
+  padding: 1rem 2rem;
+  letter-spacing: 0.4rem;
+  font-size: 1.2rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+td {
+  padding: 1rem 2rem;
+  text-align: center;
+}
+/* 연락처 */
+.contact {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.contact h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.contact p {
+  color: #777;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.kakao-map {
+  margin: auto;
+  background-color: rgba(232, 232, 232, 0.5);
+  width: 60%;
+  height: 350px;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.icons {
+  color: #f44336;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+}
+
+footer p {
+  color: #777;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.icons i {
+  font-size: 35px;
+}
+/* progress */
+progress {
+      position: fixed;
+      left: 0;
+      width: 100%;
+      height: 5px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      border: none;
+      background-color: transparent;
+      color: #4c9cf3;
+      z-index: 10;
+    }
+
+    progress::-webkit-progress-bar {
+      background-color: transparent;
+      z-index: 10;
+    }
+
+    progress::-webkit-progress-value {
+      background-color: #4c9cf3;
+      z-index: 10;
+    }
+
+    progress::-moz-progress-bar {
+      background-color: #4c9cf3;
+      z-index: 10;
+    }
+
+    .progress-container {
+      width: 100%;
+      background-color: transparent;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 5px;
+      display: block;
+      z-index: 10;
+    }
+
+    .progress-bar {
+      background-color: #4c9cf3;
+      width: 0%;
+      display: block;
+      height: inherit;
+      z-index: 10;
+    }
+
+@media (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 700px) {
+  .header {
+    height: 100vh;
+  }
+  .logo {
+    margin-left: -18%;
+  }
+  .text-box h1 {
+    font-size: 20px;
+  }
+  .nav-links ul li {
+    display: block;
+  }
+  .nav-links {
+    position: absolute;
+    background: #f44336;
+    height: 100%;
+    width: 200px;
+    top: 0;
+    right: 0;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+  .nav .fas {
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .nav-links ul {
+    padding: 30px;
+  }
+  .swiper {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+  }
+  .gallery {
+    width: 70%;
+    margin: 50px auto;
+    text-align: center;
+  }
+  .layer{
+    height: 99%;
+  }
+}
