@@ -126,9 +126,11 @@
 
 /* 갤러리 */
 .gallery {
-  width: 70%;
+  padding: 2%;
+  width: 80%;
   margin: 100px auto;
   text-align: center;
+  background: rgba(232, 232, 232, 0.5);
 }
 
 .gallery h1 {
@@ -155,18 +157,18 @@
 .gallery-col img {
   object-fit: cover;
   width: 100%;
-  height: 90%;
+  height: 100%;
   border-radius: 10px;
 }
 
 .layer {
   cursor: pointer;
   position: absolute;
+  width: 100%;
+  height: 100%;
   top: 0;
   left: 0;
   background: transparent;
-  width: 100%;
-  height: 90%;
 }
 
 .layer:hover {
@@ -316,6 +318,54 @@ footer p {
 .icons i {
   font-size: 35px;
 }
+/* progress */
+progress {
+      position: fixed;
+      left: 0;
+      width: 100%;
+      height: 5px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      border: none;
+      background-color: transparent;
+      color: #4c9cf3;
+      z-index: 10;
+    }
+
+    progress::-webkit-progress-bar {
+      background-color: transparent;
+      z-index: 10;
+    }
+
+    progress::-webkit-progress-value {
+      background-color: #4c9cf3;
+      z-index: 10;
+    }
+
+    progress::-moz-progress-bar {
+      background-color: #4c9cf3;
+      z-index: 10;
+    }
+
+    .progress-container {
+      width: 100%;
+      background-color: transparent;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 5px;
+      display: block;
+      z-index: 10;
+    }
+
+    .progress-bar {
+      background-color: #4c9cf3;
+      width: 0%;
+      display: block;
+      height: inherit;
+      z-index: 10;
+    }
 
 @media (max-width: 700px) {
   .row {

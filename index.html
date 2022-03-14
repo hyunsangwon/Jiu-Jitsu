@@ -18,9 +18,11 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- 필요한 기능 정의
-     1. header에 이미지 슬라이더
-    -->
+    <progress value="0" max="1">
+      <div class="progress-container">
+        <span class="progress-bar"></span>
+      </div>
+    </progress>
     <div class="container">
       <div class="header">
         <div class="nav">
@@ -200,6 +202,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f283c9704c76d19621ebd286c77b5d5a&libraries=services,clusterer,drawing,geocoder"></script>
+    <script src="progress.js"></script>
     <script>
             $('.hero-btn').on('click',function(event){
                 $('html, body').animate({scrollTop: '1100'}, 500);
