@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Basic Jiu-Jitsu</title>
+    <link rel="shortcut icon" href="images/basic_logo.ico" />
     <!-- swiper css -->
     <link
       rel="stylesheet"
@@ -27,7 +28,7 @@
       <div class="header">
         <div class="nav">
           <a href="index.html"
-            ><img src="images/team-logo.png" class="logo"
+            ><img src="images/basic_logo.png" class="logo"
           /></a>
           <div class="nav-links" id="navLinks">
             <i class="fas fa-times" onclick="hideMenu()"></i>
@@ -74,15 +75,23 @@
           <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide">
-              <img src="images/header_image3.jpg" >
+              <img src="images/about/members.JPG" >
             </div>
             <div class="swiper-slide">
-              <img src="images/header_image2.jpg" >
+              <img src="images/about/open.JPG" >
             </div>
             <div class="swiper-slide">
-              <img src="images/header_image4.jpg" >
+              <img src="images/about/nogi.jpg" >
+            </div>
+            <div class="swiper-slide">
+              <img src="images/about/king.JPG" >
             </div>
           </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </section>
       <!-- 체육관 시설 소개 -->
@@ -91,27 +100,27 @@
         <p>본 체육관은 최상급 매트(ZEBRA)와 샤워실이 있고, 체력증진을 위한 헬스 기구가 있습니다.</p>
         <div class="row">
           <div class="gallery-col">
-            <img src="images/시설사진_1.jpg" />
+            <img src="images/facilities/mat.jpg" />
             <div class="layer">
-            <h3>샤워실</h3>
+            <h3>매트</h3>
             </div>
           </div>
           <div class="gallery-col">
-            <img src="images/시설사진_1.jpg" />
-            <div class="layer">
-            <h3>탈의실</h3>
-            </div>
-          </div>
-          <div class="gallery-col">
-            <img src="images/시설사진_1.jpg" />
+            <img src="images/facilities/health.jpg" />
             <div class="layer">
             <h3>헬스기구</h3>
             </div>
           </div>
           <div class="gallery-col">
-            <img src="images/시설사진_1.jpg" />
+            <img src="images/facilities/restroom.jpg">
             <div class="layer">
-            <h3>매트사진</h3>
+            <h3>화장실</h3>
+            </div>
+          </div>
+          <div class="gallery-col">
+            <img src="images/facilities/shower.jpg" />
+            <div class="layer">
+            <h3>샤워실</h3>
             </div>
           </div>    
         </div>
@@ -119,63 +128,58 @@
             <!-- 시간표 소개  -->
             <section class="programs">
                 <h1>프로그램 소개</h1>
-                <p>* 오픈매트는 2인 이상 성인만 가능하며, 미등록 회원은 별도 허가가 필요합니다.</p>
+                <p>※ 주말 수련은 공지 후 자유롭게 진행됩니다.</p>
                 <table class="programs-data">
                     <thead>
                         <tr>
-                            <th></th>
                             <th>시간</th>
                             <th>월</th>
                             <th>화</th>
                             <th>수</th>
                             <th>목</th>
                             <th>금</th>
-                            <th>토</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>오전 반</td>
-                            <td>11:00 ~ 12:00</td>
-                            <td colspan="2">주짓수</td>
-                            <td>노기</td>
-                            <td colspan="2">주짓수</td>
-                            <td>-</td>
+                            <td>15:00 ~ 16:00</td>
+                            <td></td>
+                            <td>키즈 주짓수</td>
+                            <td>키즈 주짓수</td>
+                            <td>키즈 주짓수</td>
+                            <td></td>
                         </tr>
                         <tr>
-                            <td>오후 반</td>
-                            <td>12:00 ~ 13:00</td>
-                            <td colspan="5">그룹 PT</td>
-                            <td rowspan="2">오픈 매트</td>
+                            <td>16:30 ~ 17:00</td>
+                            <td></td>
+                            <td>키즈 주짓수</td>
+                            <td>키즈 주짓수</td>
+                            <td>키즈 주짓수</td>
+                            <td></td>
                         </tr>
                         <tr>
-                            <td>키즈 부</td>
-                            <td>14:30 ~ 15:30</td>
-                            <td colspan="2">주짓수</td>
-                            <td>노기</td>
-                            <td colspan="2">주짓수</td>
+                            <td>19:00 ~ 20:30</td>
+                            <td>도복 주짓수</td>
+                            <td>도복 주짓수</td>
+                            <td>노기 주짓수</td>
+                            <td>도복 주짓수</td>
+                            <td>자율 스파링</td>
                         </tr>
                         <tr>
-                            <td>저녁 1부</td>
-                            <td>19:30 ~ 21:00</td>
-                            <td colspan="2">주짓수</td>
-                            <td>노기</td>
-                            <td colspan="2">주짓수</td>
-                            <td>-</td>
-                        </tr>
-                        <tr>
-                            <td>저녁 2부</td>
                             <td>21:00 ~ 22:30</td>
-                            <td colspan="2">주짓수</td>
-                            <td>노기</td>
-                            <td colspan="2">주짓수</td>
-                            <td>-</td>
+                            <td>도복 주짓수</td>
+                            <td>도복 주짓수</td>
+                            <td>노기 주짓수</td>
+                            <td>도복 주짓수</td>
+                            <td>자율 스파링</td>
                         </tr>
                         <tr>
-                            <td>자유 트레이닝</td>
-                            <td>22:30 ~ 23:30</td>
-                            <td colspan="5">자유운동</td>
-                            <td>-</td>
+                            <td>23:00 ~ 24:00</td>
+                            <td>도복 주짓수</td>
+                            <td>도복 주짓수</td>
+                            <td>노기 주짓수</td>
+                            <td>도복 주짓수</td>
+                            <td>자율 스파링</td>
                         </tr>
                     </tbody>
                 </table>
@@ -237,6 +241,15 @@
             const swiper = new Swiper('.swiper', {
               // Optional parameters
               loop: true,
+              // If we need pagination
+              pagination: {
+                el: '.swiper-pagination',
+              },
+              // Navigation arrows
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
               autoplay: {
                 delay: 3000,
               },
