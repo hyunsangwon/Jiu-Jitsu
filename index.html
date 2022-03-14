@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Basic Jiu-Jitsu</title>
     <!-- swiper css -->
     <link
       rel="stylesheet"
@@ -59,38 +59,28 @@
             동천백산(東天白山) 호서지부 Basic Jiu-Jitsu를 소개합니다. </br> 주짓수는 남녀노소 누구나 쉽고 재미있게 배울 수 있고,
             실제 호신술과 실전 무술로써 검증된 운동입니다.
           </p>
-          <a href="#" class="hero-btn">체육관 소개</a>
+          <a href="#" class="hero-btn">시설 소개</a>
         </div>
       </div>
       <!-- 체육관 기본 소개 -->
       <section class="gallery">
         <h1>Basic Jiu-Jitsu 소개</h1>
         <p>본 체육관은 대한주짓수회 공인 인증 체육관이며, 주짓수 및 체력 증진 프로그램을 진행하고 있습니다.</p>
-        <div class="row">
-          <div class="gallery-col">
-            <img src="/images/오픈매트.jpeg" />
-            <div class="layer">
-            <h3>단체사진</h3>
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="images/header_image3.jpg" >
+            </div>
+            <div class="swiper-slide">
+              <img src="images/header_image2.jpg" >
+            </div>
+            <div class="swiper-slide">
+              <img src="images/header_image4.jpg" >
             </div>
           </div>
-          <div class="gallery-col">
-            <img src="/images/오픈매트.jpeg" />
-            <div class="layer">
-            <h3>단체사진</h3>
-            </div>
-          </div>
-          <div class="gallery-col">
-            <img src="/images/오픈매트.jpeg" />
-            <div class="layer">
-            <h3>단체사진</h3>
-            </div>
-          </div>
-          <div class="gallery-col">
-            <img src="/images/오픈매트.jpeg" />
-            <div class="layer">
-            <h3>단체사진</h3>
-            </div>
-          </div>   
         </div>
       </section>
       <!-- 체육관 시설 소개 -->
@@ -98,20 +88,29 @@
         <h1>시설 소개</h1>
         <p>본 체육관은 최상급 매트(ZEBRA)와 샤워실이 있고, 체력증진을 위한 헬스 기구가 있습니다.</p>
         <div class="row">
-          <div class="facilities-col">
-            <img src="images/오픈매트.jpeg" alt="">
-            <h3>체육관 매트</h3>
-            <p>내용 기입</p>
-          </div>
-          <div class="facilities-col">
-            <img src="images/오픈매트.jpeg" alt="">
+          <div class="gallery-col">
+            <img src="images/시설사진_1.jpg" />
+            <div class="layer">
             <h3>샤워실</h3>
-            <p>내용 기입</p>
+            </div>
           </div>
-          <div class="facilities-col">
-            <img src="images/오픈매트.jpeg" alt="">
-            <h3>헬스 기구</h3>
-            <p>내용 기입</p>
+          <div class="gallery-col">
+            <img src="images/시설사진_1.jpg" />
+            <div class="layer">
+            <h3>탈의실</h3>
+            </div>
+          </div>
+          <div class="gallery-col">
+            <img src="images/시설사진_1.jpg" />
+            <div class="layer">
+            <h3>헬스기구</h3>
+            </div>
+          </div>
+          <div class="gallery-col">
+            <img src="images/시설사진_1.jpg" />
+            <div class="layer">
+            <h3>매트사진</h3>
+            </div>
           </div>    
         </div>
       </section>
@@ -203,17 +202,21 @@
     <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f283c9704c76d19621ebd286c77b5d5a&libraries=services,clusterer,drawing,geocoder"></script>
     <script>
             $('.hero-btn').on('click',function(event){
-                $('html, body').animate({scrollTop: '500'}, 500);
+                $('html, body').animate({scrollTop: '1100'}, 500);
             });
+            //체육관 소개
             $('#about').on('click',function(event){
                 $('html, body').animate({scrollTop: '500'}, 500);
             });
+            //체육관 시설
             $('#facilities').on('click',function(event){
                 $('html, body').animate({scrollTop: '1100'}, 500);
             });
+            //시간표
             $('#program').on('click',function(event){
                 $('html, body').animate({scrollTop: '1850'}, 500);
             });
+            //오시는길 & 연락처
             $('#contact').on('click',function(event){
                 $('html, body').animate({scrollTop: '2500'}, 500);
             });

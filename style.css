@@ -6,7 +6,7 @@
   transition: 0.5s;
 }
 .header {
-  min-height: 70vh;
+  min-height: 65vh;
   width: 100%;
   background-image: linear-gradient(rgba(4, 10, 20, 0.8), rgba(4, 10, 20, 0.8)),
     url(/images/header_image2.jpg);
@@ -87,7 +87,7 @@
 }
 
 .hero-btn {
-  margin-top: 1%;
+  margin-top: 3%;
   display: inline-block;
   text-decoration: none;
   color: #fff;
@@ -105,56 +105,32 @@
   background: #f44336;
   transition: 1s;
 }
-@media (max-width: 700px) {
-  .row {
-    flex-direction: column;
-  }
-}
 
-@media (max-width: 700px) {
-  .logo {
-    margin-left: -18%;
-  }
-  .text-box h1 {
-    font-size: 20px;
-  }
-  .nav-links ul li {
-    display: block;
-  }
-  .nav-links {
-    position: absolute;
-    background: #f44336;
-    height: 100%;
-    width: 200px;
-    top: 0;
-    right: 0;
-    text-align: left;
-    z-index: 2;
-    transition: 1s;
-  }
-  nav .fas {
-    display: block;
-    color: #fff;
-    margin: 10px;
-    font-size: 22px;
-    cursor: pointer;
-  }
-  .nav-links ul {
-    padding: 30px;
-  }
-}
 .row {
   margin-top: 2%;
   display: flex;
   justify-content: space-between;
 }
+
+.swiper {
+  width: 80%;
+  height: 500px;
+  border-radius: 5px;
+  margin-top: 2%;
+}
+
+.swiper-slide img {
+  width: 100%;
+  object-fit: cover;
+}
+
 /* 갤러리 */
 .gallery {
-  width: 80%;
-  margin: auto;
+  width: 70%;
+  margin: 100px auto;
   text-align: center;
-  padding-top: 100px;
 }
+
 .gallery h1 {
   font-size: 36px;
   font-weight: 600;
@@ -177,17 +153,18 @@
 }
 
 .gallery-col img {
+  object-fit: cover;
   width: 100%;
   height: 90%;
   border-radius: 10px;
 }
 
 .layer {
+  cursor: pointer;
   position: absolute;
   top: 0;
   left: 0;
   background: transparent;
-  transition: 0.5s;
   width: 100%;
   height: 90%;
 }
@@ -203,20 +180,39 @@
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+  transition: 0.3s;
   opacity: 0;
-  transition: 0.5s;
 }
 .layer:hover h3 {
-  bottom: 49%;
+  bottom: 45%;
   opacity: 1;
 }
+/* 시설 사진 */
+.facilities {
+  width: 80%;
+  margin: 50px auto;
+  text-align: center;
+}
 
+.facilities h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.facilities p {
+  color: #777;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  padding: 10px;
+}
+
+/* 시간표 */
 .programs {
+  padding: 2%;
   width: 80%;
   margin: auto;
   text-align: center;
-  padding-top: 80px;
-  padding-bottom: 50px;
   background: rgba(232, 232, 232, 0.5);
   overflow-x: auto;
 }
@@ -268,46 +264,7 @@ td {
   padding: 1rem 2rem;
   text-align: center;
 }
-
-.facilities {
-  width: 80%;
-  margin: auto;
-  text-align: center;
-}
-.facilities h1 {
-  font-size: 36px;
-  font-weight: 600;
-}
-
-.facilities p {
-  color: #777;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 22px;
-  padding: 10px;
-}
-.facilities-col {
-  flex-basis: 31%;
-  border-radius: 10px;
-  margin-bottom: 5%;
-  text-align: left;
-}
-
-.facilities-col img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-.facilities-col p {
-  padding: 0;
-}
-
-.facilities-col h3 {
-  margin-top: 16px;
-  margin-bottom: 15px;
-  text-align: left;
-}
-
+/* 연락처 */
 .contact {
   width: 80%;
   margin: auto;
@@ -359,12 +316,58 @@ footer p {
 .icons i {
   font-size: 35px;
 }
-.swiper {
-  width: 100%;
-  height: fit-content;
+
+@media (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
 }
 
-.swiper-slide img {
-  width: 100%;
-  height: 60vh;
+@media (max-width: 700px) {
+  .header {
+    height: 100vh;
+  }
+  .logo {
+    margin-left: -18%;
+  }
+  .text-box h1 {
+    font-size: 20px;
+  }
+  .nav-links ul li {
+    display: block;
+  }
+  .nav-links {
+    position: absolute;
+    background: #f44336;
+    height: 100%;
+    width: 200px;
+    top: 0;
+    right: 0;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+  .nav .fas {
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .nav-links ul {
+    padding: 30px;
+  }
+  .swiper {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+  }
+  .gallery {
+    width: 70%;
+    margin: 50px auto;
+    text-align: center;
+  }
+  .layer{
+    height: 99%;
+  }
 }
