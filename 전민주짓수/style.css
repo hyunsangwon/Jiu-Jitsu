@@ -420,4 +420,7 @@ progress::-moz-progress-bar {
   .layer {
     height: 99%;
   }
+  .kakao-map {
+    width: 100%;
+  }
 }
