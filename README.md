@@ -8,8 +8,8 @@
 
 ### 운영 중 사이트
 
-- 장대동 주짓수 (베이직 주짓수)
-- 전민동 주짓수 (팀그라운드)
+- 장대동 주짓수 (베이직 주짓수) : http://kimmina.pro.s3-website.ap-northeast-2.amazonaws.com/
+- 전민동 주짓수 (팀그라운드) : http://teamground-bjj.pro.s3-website.ap-northeast-2.amazonaws.com
 
 ### OpenGraph
 
