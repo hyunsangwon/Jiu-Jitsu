@@ -27,6 +27,10 @@
 <meta property="og:site_name" content="전민동 주짓수" />
 <meta property="og:locale" content="ko-KR" />
 <meta
+  name="description"
+  content="전민동 주짓수, 문지동 주짓수, 관평동 주짓수, 주짓수, 대전 주짓수"
+/>
+<meta
   name="keywords"
   content="전민동 주짓수, 문지동 주짓수, 관평동 주짓수, 주짓수"
 />
