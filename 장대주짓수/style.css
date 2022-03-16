@@ -261,12 +261,13 @@ thead {
 th {
   padding: 1rem 2rem;
   letter-spacing: 0.4rem;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 900;
   text-align: center;
 }
 
 td {
+  font-size: 1.4rem;
   padding: 1rem 2rem;
   text-align: center;
 }
