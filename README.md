@@ -8,7 +8,7 @@
 
 ### 운영 중 사이트
 
-- 장대동 주짓수 (베이직 주짓수) : http://kimmina.pro.s3-website.ap-northeast-2.amazonaws.com/
+- 장대동 주짓수 (베이직 주짓수) : http://basic-bjj.pro.s3-website.ap-northeast-2.amazonaws.com
 - 전민동 주짓수 (팀그라운드) : http://teamground-bjj.pro.s3-website.ap-northeast-2.amazonaws.com
 
 ### OpenGraph
@@ -31,3 +31,11 @@
   content="전민동 주짓수, 문지동 주짓수, 관평동 주짓수, 주짓수"
 />
 ```
+
+### 네이버 검색엔진 등록 step by step
+
+1. https://searchadvisor.naver.com/ 접속 후 로그인
+2. 웹마스터 도구 클릭(로그인 옆에 있음)
+3. 사이트 주소 입력 후 화살표아이콘 클릭
+4. HTML 태그 선택 -> 소유 확인
+5. 몇일 후 네이버 검색 확인
