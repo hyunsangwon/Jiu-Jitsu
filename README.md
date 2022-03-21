@@ -36,10 +36,16 @@
 />
 ```
 
+### 사이트맵(sitemap)
+  웹페이지의 구조를 검색 엔진이 쉽고 정확하게 이해할 수 있도록 일정한 규칙으로 생성된 XML 문서.
+  http://www.check-domains.com/sitemap/index.php (사이트맵 만들어주는 사이트)
+
+
 ### 네이버 검색엔진 등록 step by step
 
 1. https://searchadvisor.naver.com/ 접속 후 로그인
 2. 웹마스터 도구 클릭(로그인 옆에 있음)
 3. 사이트 주소 입력 후 화살표아이콘 클릭
 4. HTML 태그 선택 -> 소유 확인
-5. 몇일 후 네이버 검색 확인
+5. robots.txt, sitemap 등록, 웹페이지 수집 요청
+6. 몇일 후 네이버 검색 확인
