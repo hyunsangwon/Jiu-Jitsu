@@ -405,12 +405,14 @@ progress::-moz-progress-bar {
   padding: 3%;
 }
 .member-info h6 {
-  margin: 0;
+  margin: 2px auto 10px;
   font-size: 20px;
   font-weight: 600;
   color: black;
+  border-bottom: 1px solid #e3e6f0;
 }
 .member-info p {
+  text-align: left;
   color: #4b5156;
   font-size: 14px;
   font-family: 'Roboto Mono', monospace;
