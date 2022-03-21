@@ -378,6 +378,11 @@ progress::-moz-progress-bar {
   text-align: center;
 }
 
+.about h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
 .member-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, 350px);

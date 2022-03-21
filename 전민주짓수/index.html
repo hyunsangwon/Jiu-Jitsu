@@ -49,10 +49,10 @@
           <div class="nav-links" id="navLinks">
             <i class="fas fa-times" onclick="hideMenu()"></i>
             <ul>
-              <li><a href="#" id="about">ABOUT</a></li>  
-              <li><a href="#" id="facilities">FACILITIES</a></li>
-              <li><a href="#" id="program">PROGRAMS</a></li>
-              <li><a href="#" id="contact">CONTACT</a></li>
+              <li><a href="#gallery" name="scroll_move">ABOUT</a></li>  
+              <li><a href="#facilities" name="scroll_move">FACILITIES</a></li>
+              <li><a href="#programs" name="scroll_move">PROGRAMS</a></li>
+              <li><a href="#contact" name="scroll_move">CONTACT</a></li>
             </ul>
           </div>
           <i class="fas fa-bars" onclick="showMenu()"></i>
@@ -70,16 +70,15 @@
           <span style="--i: 8">u</span>
           <span style="--i: 9">n</span>
           <span style="--i: 10">d</span>
-
           <p>
             동천백산(東天白山) 호서지부 팀그라운드 주짓수를 소개합니다. </br> 주짓수는 남녀노소 누구나 쉽고 재미있게 배울 수 있고,
             실제 호신술과 실전 무술로써 검증된 운동입니다.
           </p>
-          <a href="#" class="hero-btn">시설 소개</a>
+          <a href="#facilities" class="hero-btn">시설 소개</a>
         </div>
       </div>
       <!-- 체육관 기본 소개 -->
-      <section class="gallery">
+      <section id="gallery" class="gallery">
         <h1>팀그라운드 주짓수 소개</h1>
         <p>본 체육관은 대한주짓수회 공인 인증 체육관이며, 주짓수 및 체력 증진 프로그램을 진행하고 있습니다.</p>
         <!-- Slider main container -->
@@ -108,7 +107,7 @@
         </div>
       </section>
       <!-- 체육관 시설 소개 -->
-      <section class="facilities">
+      <section id="facilities" class="facilities">
         <h1>시설 소개</h1>
         <p>본 체육관은 최상급 매트와 샤워실이 있고, 체력증진을 위한 헬스 기구가 있습니다.</p>
         <div class="row">
@@ -139,7 +138,7 @@
         </div>
       </section>
             <!-- 시간표 소개  -->
-            <section class="programs">
+            <section id="programs" class="programs">
                 <h1>프로그램 소개</h1>
                 <p>노기(No-Gi: 도복을 Gi라고 함)는 도복을 입지 않는 주짓수입니다.</p>
                 <p><span style="color:red">※</span> 오픈매트는 2인 이상 성인만 가능하며, 미등록 회원은 별도 허가가 필요합니다.</p>
@@ -210,7 +209,7 @@
                     </tbody>
                 </table>
             </section>
-            <section class="contact">
+            <section id="contact" class="contact">
                 <h1>오시는 길</h1>
                 <p>전민네거리 보도 5분 거리 이며, 전민동 행정복지센터 맞은편에 위치합니다.</p>
                 <div class="row">
@@ -235,25 +234,12 @@
     <script src="progress.js"></script>
     <script>
             $('.hero-btn').on('click',function(event){
-                $('html, body').animate({scrollTop: '1100'}, 500);
+                $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
             });
-            //체육관 소개
-            $('#about').on('click',function(event){
-                $('html, body').animate({scrollTop: '500'}, 500);
+            $('a[name="scroll_move"]').on('click',function(event){
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
             });
-            //체육관 시설
-            $('#facilities').on('click',function(event){
-                $('html, body').animate({scrollTop: '1100'}, 500);
-            });
-            //시간표
-            $('#program').on('click',function(event){
-                $('html, body').animate({scrollTop: '1850'}, 500);
-            });
-            //오시는길 & 연락처
-            $('#contact').on('click',function(event){
-                $('html, body').animate({scrollTop: '2500'}, 500);
-            });
-
             var navLinks = document.getElementById('navLinks');
             function showMenu() {
               navLinks.style.right = '0';

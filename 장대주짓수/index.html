@@ -54,10 +54,10 @@
           <div class="nav-links" id="navLinks">
             <i class="fas fa-times" onclick="hideMenu()"></i>
             <ul>
-              <li><a href="#" id="about">ABOUT</a></li>  
-              <li><a href="#" id="facilities">FACILITIES</a></li>
-              <li><a href="#" id="program">PROGRAMS</a></li>
-              <li><a href="#" id="contact">CONTACT</a></li>
+              <li><a href="#about" name="scroll_move">ABOUT</a></li>  
+              <li><a href="#facilities" name="scroll_move">FACILITIES</a></li>
+              <li><a href="#programs" name="scroll_move">PROGRAMS</a></li>
+              <li><a href="#contact" name="scroll_move">CONTACT</a></li>
             </ul>
           </div>
           <i class="fas fa-bars" onclick="showMenu()"></i>
@@ -85,7 +85,7 @@
             실제 호신술과 실전 무술로써 검증된 운동입니다.
             </br> 주짓수를 통해 협동심, 자신감, 존중을 배울 수 있습니다.
           </p>
-          <a href="#" class="hero-btn">시설 소개</a>
+          <a href="#facilities" class="hero-btn">시설 소개</a>
         </div>
       </div>
       <!-- 체육관 기본 소개 -->
@@ -122,7 +122,8 @@
           <div class="swiper-button-next"></div>
         </div>
       </section>
-      <section class="about">
+      <section id="about" class="about">
+        <h1>Basic professor</h1>
         <div class="member-wrapper">
           <div class="member">
             <img src="images/master.jpeg" />
@@ -141,7 +142,7 @@
         </div>
       </section>
       <!-- 체육관 시설 소개 -->
-      <section class="facilities">
+      <section id="facilities" class="facilities">
         <h1>시설 소개</h1>
         <p>본 체육관은 최상급 매트(ZEBRA)와 깨끗한 샤워실, 탈의실이 있고, 체력증진을 위한 헬스 기구가 있습니다.</p>
         <div class="row">
@@ -172,7 +173,7 @@
         </div>
       </section>
             <!-- 시간표 소개  -->
-            <section class="programs">
+            <section id="programs" class="programs">
                 <h1>프로그램 소개</h1>
                 <p><span style="color:red; font-weight: bold;">※</span> 주말 수련은 공지 후 자유롭게 진행됩니다.</p>
                 <table class="programs-data">
@@ -230,7 +231,7 @@
                     </tbody>
                 </table>
             </section>
-            <section class="contact">
+            <section id="contact" class="contact">
                 <h1>오시는 길</h1>
                 <p>스타벅스 장대점 맞은편 디엔비빌딩 6층에 위치합니다.</p>
                 <div class="row">
@@ -255,25 +256,12 @@
     <script src="progress.js"></script>
     <script>
             $('.hero-btn').on('click',function(event){
-                $('html, body').animate({scrollTop: '1100'}, 500);
+                $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
             });
-            //체육관 소개
-            $('#about').on('click',function(event){
-                $('html, body').animate({scrollTop: '500'}, 500);
+            $('a[name="scroll_move"]').on('click',function(event){
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
             });
-            //체육관 시설
-            $('#facilities').on('click',function(event){
-                $('html, body').animate({scrollTop: '1100'}, 500);
-            });
-            //시간표
-            $('#program').on('click',function(event){
-                $('html, body').animate({scrollTop: '1850'}, 500);
-            });
-            //오시는길 & 연락처
-            $('#contact').on('click',function(event){
-                $('html, body').animate({scrollTop: '2500'}, 500);
-            });
-
             var navLinks = document.getElementById('navLinks');
             function showMenu() {
               navLinks.style.right = '0';
@@ -306,15 +294,12 @@
                 level: 3 // 지도의 확대 레벨
             };
             var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
-
             // 마커가 표시될 위치입니다 
             var markerPosition  = new kakao.maps.LatLng(36.36137703049866,127.33657122838159); 
-
             // 마커를 생성합니다
             var marker = new kakao.maps.Marker({
                 position: markerPosition
             });
-
             // 마커가 지도 위에 표시되도록 설정합니다
             marker.setMap(map);
     </script>
