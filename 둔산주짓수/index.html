@@ -277,9 +277,9 @@
         $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
       });
       var swiper = new Swiper('.mySwiper', {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        slidesPerGroup: 3,
+        slidesPerView: 3, // 동시에 보여줄 슬라이드 갯수
+        spaceBetween: 30,  // 슬라이드간 간격
+        slidesPerGroup: 3, // 그룹으로 묶을 수, slidesPerView 와 같은 값을 지정하는게 좋음
         loop: true,
         loopFillGroupWithBlank: true,
         pagination: {
@@ -290,7 +290,7 @@
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
         },
-        breakpoints: {
+        breakpoints: { //반응형 설정
           1024: {
             slidesPerView: 3,
             spaceBetween: 40,
@@ -307,6 +307,11 @@
             slidesPerGroup: 1,
           },
           400: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            slidesPerGroup: 1,
+          },
+          300: {
             slidesPerView: 1,
             spaceBetween: 10,
             slidesPerGroup: 1,
