@@ -86,7 +86,7 @@
           </div>
         </div>
         <div class="inner-home">
-          <img src="images/class1.webp" alt="" />
+          <img src="images/main.jpg" alt="" />
         </div>
       </div>
     </div>
@@ -96,16 +96,28 @@
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="images/test01.png" alt="" />
-            <h2>오픈 매트</h2>
+            <img src="images/대회.jpg" alt="" />
+            <h2>주짓수 대회</h2>
           </div>
           <div class="swiper-slide">
-            <img src="images/test02.webp" alt="" />
+            <img src="images/승급식.JPG" alt="" />
             <h2>승급식</h2>
           </div>
           <div class="swiper-slide">
-            <img src="images/test03.jpeg" alt="" />
+            <img src="images/기술훈련.jpg" alt="" />
             <h2>기술 훈련</h2>
+          </div>
+           <div class="swiper-slide">
+            <img src="images/지도자모임.jpg" alt="" />
+            <h2>지도자 모임</h2>
+          </div>
+           <div class="swiper-slide">
+            <img src="images/스파링.jpg" alt="" />
+            <h2>스파링 훈련</h2>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/단체.jpg" alt="" />
+            <h2>단체 사진</h2>
           </div>
         </div>
         <div class="swiper-button-next"></div>
@@ -118,7 +130,7 @@
       <p>
         <span style="color: red; font-weight: bold">※</span> 오픈매트는 공지 후
         자유롭게 진행됩니다.</br>
-        <span style="color: red; font-weight: bold">※</span> 토,일 주짓수는 11시 시작입니다.
+        <span style="color: red; font-weight: bold">※</span> 토 주짓수는 11시 시작입니다. (일요일 휴무)
       </p>
       <table class="programs-data">
         <thead>
@@ -130,13 +142,11 @@
             <th>목</th>
             <th>금</th>
             <th style="color: blue">토</th>
-            <th style="color: red">일</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>10:30 - 12:00</td>
-            <td>주짓수</td>
             <td>주짓수</td>
             <td>주짓수</td>
             <td>주짓수</td>
@@ -152,7 +162,6 @@
             <td>주짓수</td>
             <td>주짓수</td>
             <td></td>
-            <td></td>
           </tr>
           <tr>
             <td>19:00 - 20:30</td>
@@ -162,18 +171,14 @@
             <td>주짓수</td>
             <td>주짓수</td>
             <td></td>
-            <td></td>
           </tr>
           <tr>
             <td>21:00 - 22:20</td>
             <td>주짓수</td>
             <td>주짓수</td>
             <td>주짓수</td>
-            <td>
-              <span style="color: #e74a3b; font-weight: bold">노기 주짓수</span>
-            </td>
             <td>주짓수</td>
-            <td></td>
+            <td>주짓수</td>
             <td></td>
           </tr>
           <tr>
@@ -184,7 +189,6 @@
             <td>주짓수</td>
             <td>주짓수</td>
             <td></td>
-            <td></td>
           </tr>
         </tbody>
       </table>
@@ -194,7 +198,7 @@
       <h1>코치진 소개</h1>
       <div class="main-trainer">
         <div class="inner-trainer">
-          <img src="images/train1.png" alt="" />
+          <img src="images/master.jpg" />
         </div>
         <div class="inner-trainer">
           <div class="trainer-content">
@@ -212,12 +216,12 @@
             <p>대전시주짓수회 이사</p>
             <p>대전시주짓수대표팀 감독</p>
             <div class="icons">
-              <i class="fab fa-instagram" onclick="moveInsta()"></i>
+              <i class="fab fa-instagram" onclick="moveInsta('master')"></i>
             </div>
           </div>
         </div>
         <div class="inner-trainer">
-          <img src="images/train2.png" alt="" />
+          <img src="images/leandro.jpg" style="width: 82%;"/>
         </div>
         <div class="inner-trainer">
           <div class="trainer-content">
@@ -229,8 +233,9 @@
             <p>청주오픈 체급 은메달</p>
             <p>주짓수포올 체급 동메달</p>
             <p>리얼주짓수 체급 금메달</p>
+            <p>2021년 대전시대표</p>
             <div class="icons">
-              <i class="fab fa-instagram" onclick="moveInsta()"></i>
+              <i class="fab fa-instagram" onclick="moveInsta('coach')"></i>
             </div>
           </div>
         </div>
@@ -249,12 +254,9 @@
     </section>
     <!-- 아래글 -->
     <footer>
-      <div class="icons">
-        <i class="fab fa-instagram" onclick="moveInsta()"></i>
-      </div>
       <p>둔산주짓수클럽</p>
       <p>
-        관장 문성준 TEL) 042-485-8226 <i class="fas fa-phone-square-alt"></i>
+        관장 문성준 TEL) 010-3656-6568 <i class="fas fa-phone-square-alt"></i>
       </p>
     </footer>
     <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f283c9704c76d19621ebd286c77b5d5a&libraries=services,clusterer,drawing,geocoder"></script>
@@ -276,6 +278,16 @@
         event.preventDefault();
         $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
       });
+
+      function moveInsta(who){
+        if(who == 'master'){
+           location.href="https://www.instagram.com/dunsan_jiujitsuclub_dcbs";
+        }
+        if(who == 'coach'){
+           location.href="https://www.instagram.com/leandrolo111";
+        }
+      }
+
       var swiper = new Swiper('.mySwiper', {
         slidesPerView: 3, // 동시에 보여줄 슬라이드 갯수
         spaceBetween: 30,  // 슬라이드간 간격
