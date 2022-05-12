@@ -241,6 +241,36 @@ td {
     padding: 1rem 2rem;
     text-align: center;
 }
+/* 가격 테이블 */
+.membership-fee{
+    width: 90%;
+    margin: 0 auto;
+    padding: 3rem 7%;
+}
+.membership-fee h1{
+    font-weight: 600;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.membership-table{
+    display: flex;
+    justify-content: space-around;
+}
+.item {
+    border-radius: 10px;
+    background-color: #5a5c69;
+    padding: 2% 4%;
+    color: #fff;
+    text-align: center;
+}
+.item p {
+    font-size: 22px;
+}
+.item h2 {
+    font-size: 24px;
+    font-weight: 500;
+}
 
 /* 트레이너 소개 */
 .our-trainers{
