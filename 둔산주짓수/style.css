@@ -435,4 +435,10 @@ footer p {
     .kakao-map {
         width: 100%;
     }
+    .membership-table{
+        flex-direction: column;
+    }
+    .membership-table .item{
+        border: 3px solid;
+    }
 }
