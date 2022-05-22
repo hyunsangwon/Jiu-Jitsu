@@ -402,19 +402,26 @@ progress::-moz-progress-bar {
   object-fit: cover;
 }
 .member-info {
-  padding: 3%;
+  padding: 4%;
 }
 .member-info h6 {
   margin: 2px auto 10px;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 600;
   color: black;
   border-bottom: 1px solid #e3e6f0;
 }
+.member-info h6 i{
+  margin-left: 20px;
+  font-size: 35px;
+  color: #f44336;
+  cursor: pointer;
+}
+
 .member-info p {
   text-align: left;
   color: #4b5156;
-  font-size: 14px;
+  font-size: 16px;
   font-family: 'Roboto Mono', monospace;
 }
 
@@ -464,7 +471,7 @@ progress::-moz-progress-bar {
     border-radius: 0;
   }
   .gallery {
-    width: 70%;
+    width: 95%;
     margin: 50px auto;
     text-align: center;
   }
@@ -473,5 +480,8 @@ progress::-moz-progress-bar {
   }
   .kakao-map {
     width: 100%;
+  }
+  .text-box {
+    top: 25%;
   }
 }

@@ -112,19 +112,19 @@
           <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide">
-              <img src="images/about/members.JPG" >
+              <img src="images/about/member.jpeg" >
             </div>
             <div class="swiper-slide">
-              <img src="images/about/members02.jpeg" >
+              <img src="images/about/member01.jpeg" >
             </div>
             <div class="swiper-slide">
-              <img src="images/about/members03.jpeg" >
+              <img src="images/about/member02.jpeg" >
             </div>
             <div class="swiper-slide">
-              <img src="images/about/open.JPG" >
+              <img src="images/about/member03.jpeg" >
             </div>
             <div class="swiper-slide">
-              <img src="images/about/nogi.jpg" >
+              <img src="images/about/member04.jpeg" >
             </div>
             <div class="swiper-slide">
               <img src="images/about/king.JPG" >
@@ -137,13 +137,17 @@
           <div class="swiper-button-next"></div>
         </div>
       </section>
+      <!-- 관장,코치 소개 -->
       <section id="about" class="about">
         <h1>Basic professor</h1>
         <div class="member-wrapper">
           <div class="member">
             <img src="images/master.jpeg" />
             <div class="member-info">
-              <h6>관장 이남렬</h6>
+              <h6>
+                관장 이남렬
+                <i class="fab fa-instagram" onclick="moveInsta('master')"></i>  
+              </h6>
               <p>제3회 대전서구청장배 금메달</p>
               <p>제3회 대전 서구협회장배 금매달</p>
               <p>제4회 대전 서구협회장배 금매달</p>
@@ -157,7 +161,10 @@
           <div class="member">
             <img src="images/sub-master.jpeg" />
             <div class="member-info">
-              <h6>코치 최정훈</h6>
+              <h6>
+                코치 최정훈
+                <i class="fab fa-instagram" onclick="moveInsta('coach')"></i>
+              </h6>
               <p>제1회 대전서구청장배 동메달</p>
               <p>제3회 대전서구청장배 금메달</p>
               <p>제3회 대전서구청장배 앱솔동메달</p>
@@ -266,9 +273,6 @@
                 </div>
             </section>
             <footer>
-                <div class="icons">
-                    <i class="fab fa-instagram" onclick="moveInsta()"></i>
-                </div>
                 <p>베이직 주짓수</p>
                 <p>관장 이남렬 TEL) 010-4455-0060 <i class="fas fa-phone-square-alt"></i></p>
                 <p>코치 최정훈 TEL) 010-8478-1722 <i class="fas fa-phone-square-alt"></i></p>
@@ -297,8 +301,14 @@
             function hideMenu() {
               navLinks.style.right = '-200px';
             }
-            function moveInsta(){
-              location.href="https://www.instagram.com/basic_jiujitsu_jangdae";
+            //인스타 링크 함수
+            function moveInsta(who){
+              if(who == 'master'){
+                location.href="https://www.instagram.com/basicjiujitsu";
+              }
+              if(who == 'coach'){
+                location.href="https://www.instagram.com/basic_jiujitsu_jangdae";
+              }
             }
             const swiper = new Swiper('.swiper', {
               // Optional parameters
