@@ -129,7 +129,8 @@ header.header-active .navbar a {
 
 .home {
     min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(images/bjj_home.jpeg) no-repeat;
+    background-image: linear-gradient(rgba(4, 10, 20, 0.7), rgba(4, 10, 20, 0.6)),
+            url(images/home.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -172,6 +173,7 @@ header.header-active .navbar a {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border-radius: 1%;
 }
 
 .about .row .content {
@@ -208,7 +210,6 @@ header.header-active .navbar a {
     margin: 1rem;
     overflow: hidden;
     position: relative;
-    cursor: pointer;
 }
 
 .service .box-container .box img {
@@ -245,79 +246,73 @@ header.header-active .navbar a {
     color: #666;
     padding: 1rem 2rem;
 }
-
-.trainer {
+/* 시간표 */
+.programs {
     min-height: 100vh;
+    padding: 3rem 7%;
+    background: rgba(232, 232, 232, 0.7);
+    width: 100%;
     text-align: center;
-    background: #333;
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: auto;
+    overflow-x: auto;
 }
 
-.trainer .heading {
-    color: #fff;
+.programs h1 {
+    margin-top: 50px;
+    font-size: 50px;
+    font-weight: 600;
 }
 
-.trainer .box-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+.programs p {
+    color: #777;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    padding: 10px;
 }
 
-.trainer .box-container .box {
-    height: 40rem;
-    margin: 1.5rem 1rem;
-    width: 27rem;
-    border: .5rem solid var(--orange);
-    overflow: hidden;
-    position: relative;
-    box-shadow: 0 .3rem .5rem #000;
+.programs-data {
+    width: 1000px;
+    height: 400px;
+    margin: auto;
+    box-shadow: 0 3px 7px grey;
+    background-color: white;
 }
 
-.trainer .box-container .box img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+.programs-data:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
 
-.trainer .box-container .box .info {
-    color: #333;
-    background: #fff;
-    border-top: .5rem solid var(--orange);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    font-size: 2rem;
-    width: 100%;
-    padding: 1rem 0;
+tr {
+    border: 1px solid #444444;
 }
 
-.trainer .box-container .box .share {
-    position: absolute;
-    top: 1rem;
-    right: -100%;
-    display: flex;
-    flex-flow: column;
+tr:nth-child(even) {
+    background-color: #eaeaeb;
 }
 
-.trainer .box-container .box:hover .share {
-    right: 0;
+thead {
+    box-shadow: 0 1px 5px grey;
 }
 
-.trainer .box-container .box .share a {
-    height: 4rem;
-    width: 4.5rem;
-    line-height: 4rem;
-    color: #333;
-    font-size: 2rem;
-    background: #fff;
-    margin: .5rem 1rem;
+th {
+    padding: 1rem 2rem;
+    letter-spacing: 0.4rem;
+    font-size: 1.8rem;
+    font-weight: 900;
+    text-align: center;
 }
 
-.trainer .box-container .box .share a:hover {
-    background: var(--orange);
-    color: #fff;
+td {
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    text-align: center;
 }
 
+/* 가격 */
 .plan {
     min-height: 100vh;
     text-align: center;
@@ -384,88 +379,54 @@ header.header-active .navbar a {
 .plan .box-container .box .btn {
     margin-bottom: 3rem;
 }
-
-.register {
-    min-height: 90vh;
+/* 오시는길 */
+.contact {
+    min-height: 80vh;
+    width: 80%;
+    margin: auto;
     text-align: center;
-    background: #000;
-    padding-bottom: 3rem;
+    padding-top: 60px;
 }
-
-.register .heading {
-    color: #fff;
+.contact h1 {
+    font-size: 50px;
+    font-weight: 600;
 }
-
-.register form {
-    width: 75%;
-    margin: 0 auto;
+.contact p {
+    color: #777;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    padding: 10px;
 }
-
-.register form .inputBox {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.kakao-map {
+    margin: auto;
+    background-color: rgba(232, 232, 232, 0.5);
+    width: 70%;
+    height: 350px;
 }
-
-.register form .inputBox input,
-textarea {
-    height: 4rem;
-    width: 49%;
-    background: #111;
-    color: #fff;
-    padding: 0 1rem;
-    margin: 1rem 0;
-    font-size: 2rem;
-    border: none;
-}
-
-.register form .inputBox input:focus,
-textarea:focus {
-    background: #222;
-}
-
-.register form textarea {
-    height: 20rem;
-    resize: none;
-    padding: 1rem;
-    width: 100%;
-}
-
-.register form .btn:hover {
-    background: var(--orange);
-}
-
-.footer {
+/* 아래글 */
+footer {
     color: #eee;
     background: #111;
     text-align: center;
     padding: 2rem 1rem;
     font-size: 2rem;
 }
-
-.footer a {
-    color: var(--orange);
+footer p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
 }
-
-.footer a:hover {
-    color: #fff;
+.icons {
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.icons i {
+    font-size: 40px;
+}
 /* media queries  */
-
 @media (max-width:768px) {
 
     html {
