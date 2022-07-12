@@ -2,10 +2,6 @@
 
     체육관 사이트 템플릿 :)
 
-### 목표
-
-    2022년 10개 체육관 운영해보기
-
 ### 운영 중 사이트
 
 - 둔산동 주짓수 (둔산주짓수클럽) : http://dunsan-bjj.pro.s3-website.ap-northeast-2.amazonaws.com
